@@ -1,0 +1,23 @@
+nav.navbar.navbar-default.navbar-fixed-top
+  .container
+    .navbar-header
+      button(type="button", class="navbar-toggle collapsed", 
+      data-toggle="collapse", data-target="#navbar", aria-expanded="false")
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a(class="navbar-brand" href="/") NodeAuth
+    #navbar.collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li(class=(title === 'Members' ? 'active' : ''))
+          a(href="/") Members
+        if !user
+          li(class=(title === 'Register' ? 'active' : ''))
+            a(href="/users/register") Register
+          li(class=(title === 'Login' ? 'active' : ''))
+            a(href="/users/login") Login
+      if user
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href="/users/logout") Logout

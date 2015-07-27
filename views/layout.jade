@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title NodeAuth
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    include includes/nav.jade
+    .container
+      != messages()
+      block content
+    script(src="https://code.jquery.com/jquery-1.11.3.min.js")
+    script(src="/javascripts/bootstrap.js")

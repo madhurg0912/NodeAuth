@@ -1,0 +1,7 @@
+public/vendor/*
+node_modules/*
+*.min.js.map
+/config.js
+.nodemonignore
+/npm-debug.log
+.build/*

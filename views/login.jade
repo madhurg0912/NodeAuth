@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  .row
+    .col-xs-10.col-sm-10.col-md-6.col-lg-6
+      h1 Login
+      p Please login below
+      form(method='POST', action='/users/login', 
+      enctype='multipart/form-data')
+        .form-group
+          label Username
+          input.form-control(name='username', id='username', type='text', 
+          placeholder='Enter username')
+        .form-group
+          label Password
+          input.form-control(name='password', id='password', type='password', 
+          placeholder='Enter password')
+        input.btn.btn-default(name='submit', id='submit', type='submit', 
+        value='Login')

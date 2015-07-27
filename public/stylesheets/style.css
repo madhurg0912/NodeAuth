@@ -1,0 +1,51 @@
+body {
+  padding-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.jumbotron {
+  background: url('../images/bg.jpg') repeat-x;
+}
+
+footer {
+  background: #f4f4f4;
+  height: 40px;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 10px;
+  overflow: auto;
+}
+
+#messages ul.success,
+#messages ul.error,
+#messages ul.info {
+  margin: 0;
+  padding: 0;
+}
+
+#messages ul.success li,
+#messages ul.error li,
+#messages ul.info li {
+  list-style-type: none;
+  margin: 20px 0 0 0;
+  padding: 1em;
+  border-radius: 4px;
+}
+
+#messages ul.success li {
+  background-color: #DFF0D8;
+  color: #3C763D;
+  border-color: #D6E9C6;
+}
+
+#messages ul.error li {
+  background-color: #F2DEDE;
+  color: #A94442;
+  border-color: #EBCCD1;
+}
+
+#messages ul.info li {
+  background-color: #D9EDF7;
+  color: #31708F;
+  border-color: #BCE8F1;
+}
