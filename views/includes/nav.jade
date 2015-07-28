@@ -10,14 +10,37 @@ nav.navbar.navbar-default.navbar-fixed-top
       a(class="navbar-brand" href="/") NodeAuth
     #navbar.collapse.navbar-collapse
       ul.nav.navbar-nav
-        li(class=(title === 'Members' ? 'active' : ''))
-          a(href="/") Members
         if !user
+          li(class=(title === 'Home' ? 'active' : ''))
+            a(href="/") Home
+          li(class=(title === 'About us' ? 'active' : ''))
+            a(href="/users/about") About us
+          li(class=(title === 'Contact us' ? 'active' : ''))
+            a(href="/users/contact") Contact us
           li(class=(title === 'Register' ? 'active' : ''))
-            a(href="/users/register") Register
+               a(href="/users/register") Register
           li(class=(title === 'Login' ? 'active' : ''))
-            a(href="/users/login") Login
+               a(href="/users/login") Login      
+  
+          
       if user
+       ul.nav.navbar-nav
+        li(class=(title === 'Home' ? 'active' : ''))
+            a(href="/") Home
+        li(class=(title === 'About us' ? 'active' : ''))
+          a(href="/users/about") About us
+        li(class=(title === 'Courses' ? 'active' : ''))
+          a(href="/users/courses") Courses
+        li(class=(title === 'OnlineTest' ? 'active' : ''))
+          a(href="/users/usertest") OnlineTest
+        li(class=(title === 'Downloads' ? 'active' : ''))
+          a(href="/users/downloads") Downloads
+        li(class=(title === 'Contact us' ? 'active' : ''))
+          a(href="/users/contact") Contact us       
+
         ul.nav.navbar-nav.navbar-right
-          li
-            a(href="/users/logout") Logout
+         li(class=(title === 'Profile' ? 'active' : ''))
+            a(href="/users/profile") Profile
+         li
+          a(href="/users/logout") Logout
+

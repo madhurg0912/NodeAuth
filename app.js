@@ -25,9 +25,9 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 // handle file uploads
-app.use(multer({
-  dest: './uploads'
-}));
+//app.use(multer({
+  //dest: './uploads'
+//}));
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
@@ -115,6 +115,13 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
+
+//var server = app.listen(3000, function () {
+  //var host = server.address().address;
+  //var port = server.address().port;
+
+  //console.log('Example app listening at http://%s:%s', host, port);
+  //});
 
 
 module.exports = app;

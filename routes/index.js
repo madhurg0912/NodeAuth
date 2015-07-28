@@ -2,7 +2,7 @@ var express = require('express');
     router  = express.Router();
 
 router.get('/', ensureAuthenticated, function(req, res, next) {
-  res.render('index', { title: 'Members' });
+  res.render('index', { title: 'Home' });
 });
 
 function ensureAuthenticated(req, res, next) {

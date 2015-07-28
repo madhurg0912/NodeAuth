@@ -9,7 +9,31 @@ router
     res.location('/');
     res.redirect('/');
   })
+  
+  .get('/about', function(req, res, next) {
+    res.render('about', { title: 'About Us' });
+  })
+  
+  .get('/profile', function(req, res, next) {
+    res.render('profile', { title: 'Profile' });
+  })
 
+  .get('/contact', function(req, res, next) {
+    res.render('contact', { title: 'Contact Us' });
+  })
+  
+  .get('/downloads', function(req, res, next) {
+    res.render('downloads', { title: 'Downloads' });
+  })
+  
+  .get('/courses', function(req, res, next) {
+    res.render('courses', { title: 'Courses' });
+  })
+
+  .get('/usertest', function(req, res, next) {
+    res.render('usertest', { title: 'OnlineTest' });
+  })
+  
   .get('/register', function(req, res, next) {
     res.render('register', { title: 'Register' });
   })
